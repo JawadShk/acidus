@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap");
+:root {
+  --gray-100: #515769;
+  --gray-50: #81848f;
+  --cyan: #17bed2;
+}
+body {
+  font-family: "Hind", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.42857143;
+  font-size: 14px;
+  font-weight: 700;
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: var(--cyan) !important;
+  color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: var(--gray-100);
+  line-height: 1.4;
+  font-family: "Hind", sans-serif;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+.bg-cyan {
+  background-color: var(--cyan) !important;
+}
+.text-gray-100 {
+  color: var(--gray-100);
+}
+.text-gray-50 {
+  color: var(--gray-50);
+}
+.text-cyan {
+  color: var(--cyan) !important;
+}
+.text-brown {
+  color: var(--gray-100);
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #a6a7aa;
+}
+span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #bfc1c7;
+}
+/* header */
+.header .nav-item {
+  font-size: 13px;
+  font-weight: 600;
+}
+.header .nav-link {
+  color: var(--gray-100) !important;
+}
+.header .nav-link:hover,
+.blog .link:hover,
+.footer .footer-list a:hover,
+.team .team-info .link:hover,
+.location .location-info .link:hover,
+.team .team-info a:hover,
+.location .location-info a:hover {
+  color: #a6a7aa !important;
+}
+.header .nav-item .nav-link.active {
+  position: relative;
+}
+.header .nav-item .nav-link.active:after {
+  content: " ";
+  position: absolute;
+  top: 16px;
+  left: -15px;
+  width: 9px;
+  height: 2px;
+  background: var(--cyan);
+}
+/* header */
+/* index */
+.custom-header .lead,
+.custom-header .display-4 {
+  font-weight: 900;
+}
+.custom-header .jumbotron {
+  background-image: url(../images/main-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: relative;
+}
+.overlay-box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.overlay-box:hover {
+  color: white !important;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+.blog .link,
+.team .link,
+.location .link {
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-50);
+}
+.blog .link:after,
+.team .link::after,
+.location .link:after {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  width: 9px;
+  height: 2px;
+  background: var(--cyan);
+}
+.clients .client-gallery:hover {
+  opacity: 0.8;
+}
+/* index */
+.review .item p {
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: #a6a7aa;
+  border-left: none;
+  margin-left: 20px;
+}
+.review .owl-carousel .item {
+  position: relative;
+}
+.review .owl-carousel .item .customer-review::before {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 60px;
+  display: inline-block;
+  color: var(--cyan);
+  content: "“";
+}
+.contact form {
+  font-family: "Hind", sans-serif;
+}
+.contact form .form-group input,
+.contact form .form-group textarea {
+  font-size: 13px;
+}
+.footer .footer-list li a {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--gray-100);
+  line-height: 2.5;
+}
